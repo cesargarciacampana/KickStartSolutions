@@ -8,9 +8,14 @@ namespace RoundA
 	{
 		static void Main(string[] args)
 		{
-            SpeedTyping(new ConsoleIO());
-        }
+			//SpeedTyping(new ConsoleIO());
+			ChallengeNine(new ConsoleIO());
+		}
 
+		/// <summary>
+		/// https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e7021
+		/// </summary>
+		/// <param name="console"></param>
 		public static void SpeedTyping(ConsoleIO console)
 		{
 			int nTests = console.readInt();
@@ -48,6 +53,54 @@ namespace RoundA
 			}
 		}
 
+		private static int CharToInt(char c) => c - '0';
+
+		/// <summary>
+		/// https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e7997
+		/// </summary>
+		/// <param name="console"></param>
+		public static void ChallengeNine(ConsoleIO console)
+		{
+			int nTests = console.readInt();
+
+			for (int i = 0; i < nTests; i++)
+			{
+				string number = console.ReadLine();
+				int sumDigits = number.Sum(x => CharToInt(x));
+				int needed = (9 - sumDigits % 9) % 9;
+				string result = "";
+
+				if (needed == 0)
+				{
+					result = number.Insert(1, "0");
+				}
+				else
+				{
+					bool added = false;
+					int j = 0;
+					while(j < number.Length)
+					{
+						char c = number[j];
+						if (CharToInt(c) > needed)
+						{
+							result += needed;
+							added = true;
+							break;
+						}
+						result += c;
+						j++;
+					}
+
+					if (!added)
+						result += needed;
+
+					if (j < number.Length)
+						result += number.Substring(j);
+				}
+
+				console.print(i + 1, result);
+			}
+		}
 
         public class ConsoleIO
         {
@@ -67,12 +120,18 @@ namespace RoundA
 
             public void print(int nCase, string value)
             {
+				if (nCase == 0)
+					throw new Exception("nCase can't be zero");
+
                 WriteLine($"Case #{nCase}: {value}");
             }
 
             public void print(int nCase, int value)
             {
-                WriteLine($"Case #{nCase}: {value}");
+				if (nCase == 0)
+					throw new Exception("nCase can't be zero");
+
+				WriteLine($"Case #{nCase}: {value}");
             }
         }
 

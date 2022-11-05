@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeRound", "PracticeRo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoundA", "RoundA\RoundA.csproj", "{036B5ED0-71CF-4A3C-9A15-AC3475E27CBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundA.Tests", "RoundA.Tests\RoundA.Tests.csproj", "{6A5DD0CF-ED35-41C9-A145-D7CB87E2945D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoundA.Tests", "RoundA.Tests\RoundA.Tests.csproj", "{6A5DD0CF-ED35-41C9-A145-D7CB87E2945D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
