@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundH", "RoundH\RoundH.csproj", "{A535AA69-DAE9-45BF-861E-D0689ED31EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundH.Tests", "RoundH.Tests\RoundH.Tests.csproj", "{F3D211E8-BCB4-41DB-BBF4-BB98FFF7EB8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A535AA69-DAE9-45BF-861E-D0689ED31EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A535AA69-DAE9-45BF-861E-D0689ED31EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A535AA69-DAE9-45BF-861E-D0689ED31EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A535AA69-DAE9-45BF-861E-D0689ED31EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D211E8-BCB4-41DB-BBF4-BB98FFF7EB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D211E8-BCB4-41DB-BBF4-BB98FFF7EB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D211E8-BCB4-41DB-BBF4-BB98FFF7EB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D211E8-BCB4-41DB-BBF4-BB98FFF7EB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAA7FF53-84E6-4B66-A200-63E60CBC350B}
+	EndGlobalSection
+EndGlobal
